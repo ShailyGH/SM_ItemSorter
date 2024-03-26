@@ -25,6 +25,7 @@ public class SortByPriceTest
         ItemSorter itemSorter = new ItemSorter(itemsToSort);
         Comparator<Item> comparator = (Comparator<Item>) new PriceComparator();
 
+
         // when
         Item[] actual = itemSorter.sort(comparator);
 
